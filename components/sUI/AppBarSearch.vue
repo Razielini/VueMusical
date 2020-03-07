@@ -5,7 +5,7 @@
   >
     <v-text-field
       prepend-inner-icon="mdi-magnify"
-      placeholder="Prueba 'piano', o 'Barcelona'"
+      :placeholder="$t('search.placeholder')"
       solo
       light
       hide-details
@@ -23,7 +23,7 @@
         block
         color="primary"
       >
-        Buscar cerca de mí
+        {{ this.$t("search.aroundButton") }}
         <v-icon
           right
         >
@@ -33,7 +33,7 @@
       <v-subheader
         class="body-2 pl-0"
       >
-        Explora en BeMusical
+        {{ this.$t("search.explore") }}
       </v-subheader>
       <v-row
         align="center"
@@ -48,17 +48,17 @@
             <v-btn
               small
             >
-              Todos
+              {{ this.$t("search.button_all") }}
             </v-btn>
             <v-btn
               small
             >
-              Solistas
+              {{ this.$t("search.button_soloist") }}
             </v-btn>
             <v-btn
               small
             >
-              Bandas
+              {{ this.$t("search.button_ensemble") }}
             </v-btn>
           </v-btn-toggle>
         </v-col>
@@ -66,7 +66,7 @@
       <v-subheader
         class="body-2 pl-0"
       >
-        Sugerencias
+        {{ this.$t("search.suggestion") }}
       </v-subheader>
       <v-list
         dense
@@ -109,7 +109,7 @@
     <template v-slot:activator="{ on }">
       <v-text-field
         prepend-inner-icon="mdi-magnify"
-        placeholder="Prueba 'piano', o 'Barcelona'"
+        :placeholder="$t('search.placeholder')"
         solo
         light
         hide-details
@@ -134,7 +134,7 @@
           block
           color="primary"
         >
-          Buscar cerca de mí
+          {{ this.$t("search.aroundButton") }}
           <v-icon
             right
           >
@@ -144,7 +144,7 @@
         <v-subheader
           class="body-2 pl-0"
         >
-          Explora en BeMusical
+          {{ this.$t("search.explore") }}
         </v-subheader>
         <v-row
           align="center"
@@ -159,17 +159,17 @@
               <v-btn
                 small
               >
-                Todos
+                {{ this.$t("search.button_all") }}
               </v-btn>
               <v-btn
                 small
               >
-                Solistas
+                {{ this.$t("search.button_soloist") }}
               </v-btn>
               <v-btn
                 small
               >
-                Bandas
+                {{ this.$t("search.button_ensemble") }}
               </v-btn>
             </v-btn-toggle>
           </v-col>
@@ -177,7 +177,7 @@
         <v-subheader
           class="body-2 pl-0"
         >
-          Sugerencias
+          {{ this.$t("search.suggestion") }}
         </v-subheader>
         <v-list
           dense

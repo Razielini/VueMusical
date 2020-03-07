@@ -34,7 +34,11 @@
           <p
             class="mb-0"
           >
-            Hecho con ... en SF
+            Hecho con <v-icon
+              color="red"
+            >
+              mdi-heart-outline
+            </v-icon> en SF
           </p>
           <p
             class="mb-0"

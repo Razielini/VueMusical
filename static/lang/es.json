@@ -1,0 +1,31 @@
+{
+  "title": "Hello, how are you?",
+  "search": {
+    "placeholder": "Prueba 'Piano', or 'Barcelona'",
+    "aroundButton": "Buscar cerca de mí",
+    "explore": "Explora en BeMusical",
+    "button_all": "Todos",
+    "button_soloist": "Solistas",
+    "button_ensemble": "Grupos",
+    "suggestion": "Sugerencias"
+  },
+  "menu": {
+    "dashboard": "Panel",
+    "notification": "Notificaciones",
+    "concierge": "Concierge Service",
+    "account": "Configuración",
+    "logout": "Cerrar sesión"
+  },
+  "filter": {
+    "title_search": "Mostrando los resultados para"
+  },
+  "musician": {
+    "instruments": "Instrumentos",
+    "photos": "Fotos",
+    "bio": "Biografia",
+    "reviews": "Reseñas",
+    "styles": "Estilos",
+    "repertoire": "Repertorio",
+    "hire": "Contratar"
+  }
+}

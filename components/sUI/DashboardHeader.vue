@@ -18,8 +18,7 @@
             size="100"
           >
             <img
-              src="https://cdn.vuetifyjs.com/images/john.jpg"
-              alt="John"
+              src="https://i.pravatar.cc/300?img=55"
             >
           </v-avatar>
         </v-col>

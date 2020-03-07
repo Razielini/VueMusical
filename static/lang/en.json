@@ -1,0 +1,32 @@
+{
+  "title": "Hello, how are you?",
+  "search": {
+    "placeholder": "Try 'piano', or 'Barcelona'",
+    "aroundButton": "Search near me",
+    "explore": "Explore in BeMusical",
+    "button_all": "All",
+    "button_soloist": "Soloist",
+    "button_ensemble": "Ensembles",
+    "suggestion": "Suggestions"
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "notification": "Notifications",
+    "concierge": "Concierge Service",
+    "account": "Account Settings",
+    "logout": "Logout"
+  },
+  "filter": {
+    "title_search": "Showing results for"
+  },
+  "musician": {
+    "instruments": "Instruments",
+    "photos": "Photos",
+    "bio": "Biography",
+    "reviews": "Reviews",
+    "styles": "Styles",
+    "repertoire": "Repertoire",
+    "hire": "Hire"
+  }
+}
+

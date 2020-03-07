@@ -30,6 +30,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/i18n.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -69,6 +70,7 @@ export default {
         light: {
           primary: '#4b5d8e',
           info: '#1b2236',
+          secondary: '#d4d9e4',
           error: '#dc495b'
         }
       }

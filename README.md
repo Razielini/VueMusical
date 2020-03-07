@@ -19,4 +19,7 @@ $ npm run start
 $ npm run generate
 ```
 
+## https://pravatar.cc/images
+## https://hipsum.co/
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
