@@ -14,7 +14,7 @@
       :to="{ path: '/' }"
     >
       <v-img
-        src="https://bemusical.us/images/logo.svg"
+        src="/vemusical_logo.png"
         :max-width="imgSize.xs"
         :width="imgSize.xs"
         contain
@@ -57,7 +57,7 @@
             :to="{ path: '/' }"
           >
             <v-img
-              src="https://bemusical.us/images/logo.svg"
+              src="/vemusical_logo.png"
               :max-width="imgSize.xs"
               :width="imgSize.xs"
               contain
@@ -94,7 +94,7 @@
           :to="{ path: '/' }"
         >
           <v-img
-            src="https://bemusical.us/images/logo.svg"
+            src="/vemusical_logo.png"
             :max-width="imgSize.xs"
             :width="imgSize.xs"
             contain
@@ -121,21 +121,115 @@
             color="primary"
           >
             <v-list-item
-              v-for="(item, i) in items"
-              :key="i"
               dense
-              class="px-6 text-center display-1"
+              class="px-6 text-center body-2"
               color="primary"
-              :to="{ path: item.to }"
+              :to="{ path: '/patron/dashboard' }"
               nuxt
             >
               <v-list-item-content>
-                <v-list-item-title v-text="item.title" />
+                <v-list-item-title>
+                  {{ $t('menu.dashboard') }}
+                </v-list-item-title>
               </v-list-item-content>
-              <v-list-item-icon
-                v-if="item.icon"
-              >
-                <v-icon v-text="item.icon" />
+            </v-list-item>
+            <v-list-item
+              dense
+              class="px-6 text-center body-2"
+              color="primary"
+              :to="{ path: '/patron/dashboard/notification' }"
+              nuxt
+            >
+              <v-list-item-content>
+                <v-list-item-title>
+                  {{ $t('menu.notification') }}
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item
+              dense
+              class="px-6 text-center body-2"
+              color="primary"
+              :to="{ path: '/patron/dashboard/account-detail' }"
+              nuxt
+            >
+              <v-list-item-content>
+                <v-list-item-title>
+                  {{ $t('menu.concierge') }}
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item
+              dense
+              class="px-6 text-center body-2"
+              color="primary"
+              nuxt
+            >
+              <v-list-item-content>
+                <v-list-item-title>
+                  {{ $t('menu.account') }}
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item
+              v-if="$i18n.locale === 'es'"
+              dense
+              class="px-6 text-center body-2 primary"
+              color="white"
+              @click="$i18n.locale = 'en'"
+            >
+              <v-list-item-content>
+                <v-list-item-title
+                  class="white--text"
+                >
+                  To English
+                </v-list-item-title>
+              </v-list-item-content>
+              <v-list-item-icon>
+                <v-icon
+                  color="white"
+                >
+                  mdi-translate
+                </v-icon>
+              </v-list-item-icon>
+            </v-list-item>
+            <v-list-item
+              v-if="$i18n.locale === 'en'"
+              dense
+              class="px-6 text-center body-2 primary"
+              color="white"
+              @click="$i18n.locale = 'es'"
+            >
+              <v-list-item-content>
+                <v-list-item-title
+                  class="white--text"
+                >
+                  Cambiar a Español
+                </v-list-item-title>
+              </v-list-item-content>
+              <v-list-item-icon>
+                <v-icon
+                  color="white"
+                >
+                  mdi-translate
+                </v-icon>
+              </v-list-item-icon>
+            </v-list-item>
+            <v-list-item
+              dense
+              class="px-6 text-center body-2"
+              color="primary"
+              nuxt
+            >
+              <v-list-item-content>
+                <v-list-item-title>
+                  {{ $t('menu.logout') }}
+                </v-list-item-title>
+              </v-list-item-content>
+              <v-list-item-icon>
+                <v-icon>
+                  mdi-logout
+                </v-icon>
               </v-list-item-icon>
             </v-list-item>
           </v-list-item-group>
@@ -171,7 +265,7 @@
             :to="{ path: '/' }"
           >
             <v-img
-              src="https://bemusical.us/images/logo.svg"
+              src="/vemusical_logo.png"
               :max-width="imgSize.default"
               :width="imgSize.default"
               contain

@@ -12,19 +12,19 @@
         class="headline grey--text text--darken-1"
       >
         <v-col>
-          FAQ
+          {{ this.$t("footer.faq") }}
         </v-col>
         <v-col>
-          Contáctanos
+          {{ this.$t("footer.contact") }}
         </v-col>
         <v-col>
-          Blog
+          {{ this.$t("footer.blog") }}
         </v-col>
         <v-col>
-          Términos de servicio
+          {{ this.$t("footer.terms_of_service") }}
         </v-col>
         <v-col>
-          Política de privacidad
+          {{ this.$t("footer.privacy_politic") }}
         </v-col>
       </v-row>
       <v-row
@@ -34,16 +34,16 @@
           <p
             class="mb-0"
           >
-            Hecho con <v-icon
+            {{ this.$t("footer.made_with") }} <v-icon
               color="red"
             >
               mdi-heart-outline
-            </v-icon> en SF
+            </v-icon> {{ this.$t("footer.made_in") }}
           </p>
           <p
             class="mb-0"
           >
-            {{ new Date().getFullYear() }} — <strong>BeMusical LLC</strong>
+            {{ new Date().getFullYear() }} — <strong>VeMusical LLC</strong>
           </p>
         </v-col>
       </v-row>

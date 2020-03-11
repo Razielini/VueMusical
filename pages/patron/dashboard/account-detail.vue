@@ -75,6 +75,6 @@ import { Component, Vue } from 'vue-property-decorator'
   },
   layout: 'dashboard'
 })
-export default class ViewDashboardIndex extends Vue {
+export default class ViewDashboardAccountDetail extends Vue {
 }
 </script>

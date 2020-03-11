@@ -136,8 +136,6 @@ import { Component, Vue } from 'vue-property-decorator'
   layout: 'filter'
 })
 export default class ViewDashboardIndex extends Vue {
-  miniVariant: boolean = false
-
   itemsPerPage: number = 10
   page: number = 1
   items: any[] = [
@@ -241,10 +239,6 @@ export default class ViewDashboardIndex extends Vue {
     if (item !== null) {
       this.$store.dispatch('filter/remove', item)
     }
-  }
-
-  beforeMount (): void {
-    console.log(this.$vuetify.breakpoint)
   }
 }
 </script>

@@ -73,10 +73,10 @@
           </v-list-item-content>
         </v-list-item>
         <v-list-item
+          v-if="$i18n.locale === 'es'"
           dense
           class="px-6 text-center body-2 primary"
           color="white"
-          v-if="$i18n.locale === 'es'"
           @click="$i18n.locale = 'en'"
         >
           <v-list-item-content>
@@ -95,10 +95,10 @@
           </v-list-item-icon>
         </v-list-item>
         <v-list-item
+          v-if="$i18n.locale === 'en'"
           dense
           class="px-6 text-center body-2 primary"
           color="white"
-          v-if="$i18n.locale === 'en'"
           @click="$i18n.locale = 'es'"
         >
           <v-list-item-content>

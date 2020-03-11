@@ -20,7 +20,7 @@
         >
           mdi-filter
         </v-icon>
-        {{ showFilter ? 'Ocultar' : 'Mostrar' }} Filtros
+        {{ showFilter ? $t("filter.show_filter_off") : $t("filter.show_filter_on") }}
       </v-btn>
       <v-row
         v-if="showFilter"
@@ -138,6 +138,7 @@
             hide-details
             outlined
             dense
+            :search-input.sync="search.style"
           />
         </v-col>
         <v-col>
@@ -148,7 +149,7 @@
             hide-details
             outlined
             dense
-            :search-input.sync="search"
+            :search-input.sync="search.instrument"
           />
         </v-col>
         <v-col>
@@ -169,6 +170,7 @@
             hide-details
             outlined
             dense
+            :search-input.sync="search.sort"
           />
         </v-col>
       </v-row>
@@ -187,7 +189,11 @@ export default class FilterHeader extends Vue {
   date: string = new Date().toISOString().substr(0, 10)
   menu2: boolean = false
   showFilter: boolean = false
-  search: string = ''
+  search: any = {
+    instrument: '',
+    style: '',
+    sort: ''
+  }
 
   bFilter: any = {
     type: null,
@@ -207,8 +213,7 @@ export default class FilterHeader extends Vue {
     console.log('filter.instrument :: ', v)
     if (v === null) {
       this.bFilter.instrument = null
-      this.search = ''
-      console.log('filter.instrument :: is NULLL')
+      this.search.instrument = ''
     }
   }
 
@@ -216,7 +221,7 @@ export default class FilterHeader extends Vue {
   watchBFilterInstrument (v: any) {
     console.log('bFilter.instrument :: ', v)
     if (v) {
-      this.search = ''
+      this.search.instrument = ''
       this.$store.dispatch('filter/add', { type: 'instrument', value: v })
     }
   }
@@ -225,6 +230,7 @@ export default class FilterHeader extends Vue {
   watchBFilterStyle (v: any) {
     console.log('bFilter.style :: ', v)
     if (v) {
+      this.search.style = ''
       this.$store.dispatch('filter/add', { type: 'style', value: v })
     }
   }
@@ -233,6 +239,7 @@ export default class FilterHeader extends Vue {
   watchBFilterSort (v: any) {
     console.log('bFilter.sort :: ', v)
     if (v) {
+      this.search.sort = ''
       this.$store.dispatch('filter/add', { type: 'sort', value: v })
     }
   }

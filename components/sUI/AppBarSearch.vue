@@ -12,7 +12,6 @@
       flat
       depressed
       autocomplete="off"
-      v-on="on"
     />
     <v-divider />
     <v-card-text
@@ -94,8 +93,10 @@
     >
       <v-spacer />
       <v-img
-        width="100"
-        src="https://www.connexient.com/images/logo_lockup_maps_for_work_color.png"
+        width="80"
+        class="py-2"
+        contain
+        src="/logo_google_maps_for_work_color.png"
       />
     </v-card-actions>
   </v-card>
@@ -205,8 +206,10 @@
       >
         <v-spacer />
         <v-img
-          width="100"
-          src="https://www.connexient.com/images/logo_lockup_maps_for_work_color.png"
+          width="80"
+          class="py-2"
+          contain
+          src="/logo_google_maps_for_work_color.png"
         />
       </v-card-actions>
     </v-card>

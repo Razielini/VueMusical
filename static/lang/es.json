@@ -17,7 +17,9 @@
     "logout": "Cerrar sesión"
   },
   "filter": {
-    "title_search": "Mostrando los resultados para"
+    "title_search": "Mostrando los resultados para",
+    "show_filter_on": "Mostrar Filtros",
+    "show_filter_off": "Ocultar Filtros"
   },
   "musician": {
     "instruments": "Instrumentos",
@@ -27,5 +29,14 @@
     "styles": "Estilos",
     "repertoire": "Repertorio",
     "hire": "Contratar"
+  },
+  "footer": {
+    "made_with": "Hecho con",
+    "made_in": "en SF",
+    "faq": "FAQ",
+    "contact": "Contáctanos",
+    "blog": "Blog",
+    "terms_of_service": "Términos de servicio",
+    "privacy_politic": "Política de privacidad"
   }
 }

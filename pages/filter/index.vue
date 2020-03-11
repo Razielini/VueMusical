@@ -52,9 +52,9 @@
         <template v-slot:default="props">
           <v-layout
             align-start
-            justify-start
             row
             fill-height
+            :class="$vuetify.breakpoint.xs ? 'justify-center' : 'justify-start'"
           >
             <div
               v-for="(item, j) in props.items"
@@ -135,93 +135,91 @@ import { Component, Vue } from 'vue-property-decorator'
   },
   layout: 'filter'
 })
-export default class ViewDashboardIndex extends Vue {
-  miniVariant: boolean = false
-
+export default class ViewDashboardFilter extends Vue {
   itemsPerPage: number = 10
   page: number = 1
   items: any[] = [
     {
       name: 'Aaron',
       slug: 'aaron',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
       instruments: ['piano'],
       short_desc: 'Twee tumeric retro taiyaki, semiotics cloud bread woke actually live-edge portland.'
     },
     {
       name: 'Abigail',
       slug: 'abigail-1',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
       instruments: ['Flute'],
       short_desc: 'Thundercats bespoke synth fixie kombucha cold-pressed.'
     },
     {
       name: 'Abigail',
       slug: 'abigail-2',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
       instruments: ['Voice - Alto', 'Voice Mezzo'],
       short_desc: 'Four dollar toast keytar woke listicle, 90\'s cold-pressed health goth gastropub.'
     },
     {
       name: 'Adam',
       slug: 'adam',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
       instruments: ['Piano', 'Tuba', 'Trombone'],
       short_desc: 'Freegan kogi mlkshk umami YOLO portland.'
     },
     {
       name: 'Adrian Areas',
       slug: 'adrian-areas',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
       instruments: ['Trumpet', 'Bass', 'Drums'],
       short_desc: 'Jianbing twee vaporware, man bun salvia asymmetrical fashion axe.'
     },
     {
       name: 'GOT THAT SWING!',
       slug: 'got-that-swing',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
       instruments: ['Double Bass', 'Guitar'],
       short_desc: 'Next level venmo mumblecore, sustainable fanny pack fashion axe post-ironic air plant.'
     },
     {
       name: 'Ananya',
       slug: 'ananyan',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
       instruments: ['Singer', 'Sitar'],
       short_desc: 'Enamel pin flexitarian edison bulb actually, mustache heirloom tumeric.'
     },
     {
       name: 'Andrew',
       slug: 'aaron',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
       instruments: ['Piano', 'Guitar', 'Singer'],
       short_desc: 'Glossier XOXO mlkshk, enamel pin helvetica fingerstache kickstarter.'
     },
     {
       name: 'Andy',
       slug: 'andy',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
       instruments: ['Fiddle', 'Violin'],
       short_desc: 'Blue bottle sartorial single-origin coffee, VHS franzen meggings green juice hexagon listicle XOXO meh neutra.'
     },
     {
       name: 'Tony Corman',
       slug: 'tony-corman',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
       instruments: ['Piano', 'Bass', 'Drums'],
       short_desc: 'Twee air plant tumeric drinking vinegar paleo chia chambray hexagon.'
     },
     {
       name: 'Eclecta Quartet',
       slug: 'eclecta-quartet',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
       instruments: ['Viola', 'Cello', 'Violin'],
       short_desc: 'Succulents bushwick wolf authentic cloud bread lo-fi gluten-free intelligentsia.'
     },
     {
       name: 'Friction Quartet',
       slug: 'friction-quartet',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
       instruments: ['Violin', 'Cello', 'Viola'],
       short_desc: 'Mumblecore copper mug vape pinterest tote bag sartorial paleo helvetica artisan ramps.'
     }
@@ -244,7 +242,7 @@ export default class ViewDashboardIndex extends Vue {
   }
 
   beforeMount (): void {
-    console.log(this.$vuetify.breakpoint)
+    // console.log('beforeMount :: ', this.$vuetify.breakpoint.xs)
   }
 }
 </script>

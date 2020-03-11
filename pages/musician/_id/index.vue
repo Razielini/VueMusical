@@ -148,7 +148,7 @@
 
               <v-list-item-content>
                 <v-list-item-title>
-                  <label class="title">{{ review.name }}</label> <label class="title font-weight-light">{{ month[randomness(12)] }}, {{ fullyear }}</label>
+                  <label class="title">{{ review.name }}</label> <label class="title font-weight-light">{{ month[$i18n.locale][randomness(12)] }}, {{ fullyear }}</label>
                 </v-list-item-title>
                 <v-list-item-subtitle>
                   <label>{{ review.other }}</label>
@@ -257,8 +257,7 @@ import { Component, Vue } from 'vue-property-decorator'
   },
   layout: 'default'
 })
-export default class ViewDashboardIndex extends Vue {
-  miniVariant: boolean = false
+export default class ViewDashboardId extends Vue {
   viewname: string = 'ViewDashboardIndex'
 
   itemsPerPage: number = 10
@@ -267,23 +266,26 @@ export default class ViewDashboardIndex extends Vue {
   }
 
   fullyear: any = parseInt(new Date().getFullYear().toLocaleString()) - 1
-  month: any[] = [
-    'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
-    'Octubre', 'Noviembre', 'Diciembre'
-  ]
+  month: any = {
+    es: [
+      'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
+      'Octubre', 'Noviembre', 'Diciembre'
+    ],
+    en: [
+      'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September',
+      'October', 'November', 'December'
+    ]
+  }
 
   imgItems: any[] = [
     {
-      src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+      src: '/music_wall_1.jpg'
     },
     {
-      src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+      src: '/music_wall_2.jpg'
     },
     {
-      src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-    },
-    {
-      src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+      src: '/music_wall_3.jpg'
     }
   ]
 
@@ -311,17 +313,17 @@ export default class ViewDashboardIndex extends Vue {
     reviews: [
       {
         name: 'Bei Mir Bist Du Schon',
-        avatar: 'https://i.pravatar.cc/100?img=' + this.randomness(70),
+        avatar: 'https://i.pravatar.cc/50?img=' + this.randomness(70),
         other: 'Jacob Jacobs (lyricist) and Sholom Secunda (composer)'
       },
       {
         name: 'Stray Cat Strut',
-        avatar: 'https://i.pravatar.cc/100?img=' + this.randomness(70),
+        avatar: 'https://i.pravatar.cc/50?img=' + this.randomness(70),
         other: 'Stray Cats'
       },
       {
         name: 'Kiss',
-        avatar: 'https://i.pravatar.cc/100?img=' + this.randomness(70),
+        avatar: 'https://i.pravatar.cc/50?img=' + this.randomness(70),
         other: 'Prince'
       }
     ],
