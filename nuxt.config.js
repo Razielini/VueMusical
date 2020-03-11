@@ -142,6 +142,17 @@ export default {
   ** Build configuration
   */
   build: {
+    transpile: [/^vuetify/],
+    babel: {
+      plugins: [
+        ['transform-imports', {
+          'vuetify': {
+            'transform': 'vuetify/es5/components/${member}',
+            'preventFullImport': true
+          }
+        }]
+      ]
+    }
     /*
     ** You can extend webpack config here
 

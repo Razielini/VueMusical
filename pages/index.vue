@@ -50,10 +50,9 @@
         hide-default-footer
       >
         <template v-slot:default="props">
-          <v-layout
+          <v-row
             align-start
             justify-start
-            row
             fill-height
           >
             <div
@@ -105,7 +104,7 @@
                 </nuxt-link>
               </v-hover>
             </div>
-          </v-layout>
+          </v-row>
         </template>
       </v-data-iterator>
     </v-container>

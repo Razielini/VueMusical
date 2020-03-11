@@ -148,21 +148,21 @@ export default class ViewDashboardFilter extends Vue {
     {
       name: 'Abigail',
       slug: 'abigail-1',
-      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
+      img: '/avatar/pravatar_abigail_47_300.jpg',
       instruments: ['Flute'],
       short_desc: 'Thundercats bespoke synth fixie kombucha cold-pressed.'
     },
     {
-      name: 'Abigail',
-      slug: 'abigail-2',
-      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
+      name: 'Sharon',
+      slug: 'sharon',
+      img: '/avatar/pravatar_sharon_38_300.jpg',
       instruments: ['Voice - Alto', 'Voice Mezzo'],
       short_desc: 'Four dollar toast keytar woke listicle, 90\'s cold-pressed health goth gastropub.'
     },
     {
       name: 'Adam',
       slug: 'adam',
-      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
+      img: '/avatar/pravatar_adam_59_300.jpg',
       instruments: ['Piano', 'Tuba', 'Trombone'],
       short_desc: 'Freegan kogi mlkshk umami YOLO portland.'
     },
@@ -190,14 +190,14 @@ export default class ViewDashboardFilter extends Vue {
     {
       name: 'Andrew',
       slug: 'aaron',
-      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
+      img: '/avatar/pravatar_andrew_50_300.jpg',
       instruments: ['Piano', 'Guitar', 'Singer'],
       short_desc: 'Glossier XOXO mlkshk, enamel pin helvetica fingerstache kickstarter.'
     },
     {
       name: 'Andy',
       slug: 'andy',
-      img: 'https://i.pravatar.cc/200?img=' + this.randomness(70),
+      img: '/avatar/pravatar_andy_60_300.jpg',
       instruments: ['Fiddle', 'Violin'],
       short_desc: 'Blue bottle sartorial single-origin coffee, VHS franzen meggings green juice hexagon listicle XOXO meh neutra.'
     },
