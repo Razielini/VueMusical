@@ -50,9 +50,8 @@
         hide-default-footer
       >
         <template v-slot:default="props">
-          <v-layout
+          <v-row
             align-start
-            row
             fill-height
             :class="$vuetify.breakpoint.xs ? 'justify-center' : 'justify-start'"
           >
@@ -105,7 +104,7 @@
                 </nuxt-link>
               </v-hover>
             </div>
-          </v-layout>
+          </v-row>
         </template>
       </v-data-iterator>
     </v-container>
