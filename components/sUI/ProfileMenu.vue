@@ -143,5 +143,6 @@ import { Component, Vue } from 'vue-property-decorator'
 
 @Component
 export default class ProfileMenu extends Vue {
+  showMenu: boolean = false
 }
 </script>

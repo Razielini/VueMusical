@@ -1,17 +1,7 @@
-import fs from 'fs'
-import path from 'path'
 import colors from 'vuetify/es5/util/colors'
-
-const SRC_DIR = ''
-const COMPONENTS_DIR = 'components'
-
-const srcPath = path.resolve(__dirname, SRC_DIR)
-const componentDirs = fs.readdirSync(path.join(srcPath, COMPONENTS_DIR))
-const foundComponents = {}
 
 export default {
   mode: 'universal',
-  srcDir: SRC_DIR,
   /*
   ** Headers of the page
   */
@@ -89,70 +79,13 @@ export default {
     icons: {
       iconfont: 'mdi'
     },
-    treeShake: {
-      directives: [
-        'Resize'
-      ],
-      loaderOptions: {
-        /**
-         * This function will be called for every tag used in each vue component
-         * It should return an array, the first element will be inserted into the
-         * components array, the second should be a corresponding import
-         *
-         * originalTag - the tag as it was originally used in the template
-         * kebabTag    - the tag normalised to kebab-case
-         * camelTag    - the tag normalised to PascalCase
-         * path        - a relative path to the current .vue file
-         * component   - a parsed representation of the current component
-         */
-        match (originalTag, { kebabTag, camelTag }) {
-          if (kebabTag in foundComponents) {
-            return foundComponents[kebabTag]
-          }
-
-          const parts = kebabTag.split('-')
-
-          if (parts.length > 1 && componentDirs.includes(parts[0])) {
-            for (let i = 1; i < parts.length; i++) {
-              const pathPart = parts.slice(0, i)
-              const filePart = parts.slice(i)
-
-              const relPath = path.join(COMPONENTS_DIR, ...pathPart, camelTag.substr(-filePart.join('').length))
-
-              const existsJs = fs.existsSync(path.join(srcPath, `${relPath}.js`))
-              const existsVue = fs.existsSync(path.join(srcPath, `${relPath}.vue`))
-
-              if (existsJs || existsVue) {
-                const ret = [
-                  camelTag,
-                  `import ${camelTag} from '@/${relPath}'`
-                ]
-
-                foundComponents[kebabTag] = ret
-
-                return ret
-              }
-            }
-          }
-        }
-      }
-    }
+    treeShake: true
   },
   /*
   ** Build configuration
   */
   build: {
-    transpile: [/^vuetify/],
-    babel: {
-      plugins: [
-        ['transform-imports', {
-          'vuetify': {
-            'transform': 'vuetify/es5/components/${member}',
-            'preventFullImport': true
-          }
-        }]
-      ]
-    }
+    extractCSS: true
     /*
     ** You can extend webpack config here
 
