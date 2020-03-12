@@ -11,7 +11,7 @@
         v-on="on"
       >
         <img
-          src="https://i.pravatar.cc/300?img=55"
+          src="/avatar/pravatar_logued_55_50.jpg"
         >
       </v-avatar>
     </template>
@@ -143,6 +143,5 @@ import { Component, Vue } from 'vue-property-decorator'
 
 @Component
 export default class ProfileMenu extends Vue {
-  showMenu: boolean = false
 }
 </script>

@@ -18,7 +18,7 @@
             size="100"
           >
             <img
-              src="https://i.pravatar.cc/300?img=55"
+              src="/avatar/pravatar_logued_55_100.jpg"
             >
           </v-avatar>
         </v-col>
@@ -101,7 +101,7 @@ export default class DashboardHeader extends Vue {
 
 <style>
   .bg-img {
-    background-image: url('https://bemusical.us/images/dashboard/dashboard-banner-top.svg');
+    background-image: url('/dashboard-banner-top.svg');
     background-repeat: repeat-y;
     background-size: cover;
     background-position: center;

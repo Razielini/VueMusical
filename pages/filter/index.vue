@@ -82,7 +82,7 @@
                       <p
                         class="title mb-0"
                       >
-                        {{ item.name }}
+                        {{ item.name }}22
                       </p>
                       <v-chip
                         v-for="(instrument, i) in item.instruments"

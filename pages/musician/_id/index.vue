@@ -292,7 +292,7 @@ export default class ViewDashboardId extends Vue {
   page: number = 1
   item: any = {
     name: 'Aaron',
-    img: 'https://i.pravatar.cc/300?img=55',
+    img: '/avatar/pravatar_logued_60_300.jpg',
     instruments: ['Piano', 'Cello'],
     styles: ['Piano', 'Cello'],
     rate: 4,
@@ -313,17 +313,17 @@ export default class ViewDashboardId extends Vue {
     reviews: [
       {
         name: 'Bei Mir Bist Du Schon',
-        avatar: 'https://i.pravatar.cc/50?img=' + this.randomness(70),
+        avatar: '/avatar/pravatar_review_2_24_58.jpg',
         other: 'Jacob Jacobs (lyricist) and Sholom Secunda (composer)'
       },
       {
         name: 'Stray Cat Strut',
-        avatar: 'https://i.pravatar.cc/50?img=' + this.randomness(70),
+        avatar: '/avatar/pravatar_review_1_24_50.jpg',
         other: 'Stray Cats'
       },
       {
         name: 'Kiss',
-        avatar: 'https://i.pravatar.cc/50?img=' + this.randomness(70),
+        avatar: '/avatar/pravatar_review_3_31_50.jpg',
         other: 'Prince'
       }
     ],

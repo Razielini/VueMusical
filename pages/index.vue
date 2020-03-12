@@ -141,86 +141,72 @@ export default class ViewDashboardIndex extends Vue {
     {
       name: 'Aaron',
       slug: 'aaron',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: '/avatar/pravatar_aaron_60_300.jpg',
       instruments: ['piano'],
       short_desc: 'Twee tumeric retro taiyaki, semiotics cloud bread woke actually live-edge portland.'
     },
     {
       name: 'Abigail',
       slug: 'abigail-1',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: '/avatar/pravatar_abigail_47_300.jpg',
       instruments: ['Flute'],
       short_desc: 'Thundercats bespoke synth fixie kombucha cold-pressed.'
     },
     {
-      name: 'Abigail',
-      slug: 'abigail-2',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      name: 'Sharon',
+      slug: 'sharon',
+      img: '/avatar/pravatar_sharon_38_300.jpg',
       instruments: ['Voice - Alto', 'Voice Mezzo'],
       short_desc: 'Four dollar toast keytar woke listicle, 90\'s cold-pressed health goth gastropub.'
     },
     {
       name: 'Adam',
       slug: 'adam',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: '/avatar/pravatar_adam_59_300.jpg',
       instruments: ['Piano', 'Tuba', 'Trombone'],
       short_desc: 'Freegan kogi mlkshk umami YOLO portland.'
     },
     {
-      name: 'Adrian Areas',
-      slug: 'adrian-areas',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      name: 'Adrian',
+      slug: 'adrian',
+      img: '/avatar/pravatar_adrian_60_300.jpg',
       instruments: ['Trumpet', 'Bass', 'Drums'],
       short_desc: 'Jianbing twee vaporware, man bun salvia asymmetrical fashion axe.'
     },
     {
       name: 'GOT THAT SWING!',
       slug: 'got-that-swing',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: '/avatar/pravatar_got_that_swing_50_300.jpg',
       instruments: ['Double Bass', 'Guitar'],
       short_desc: 'Next level venmo mumblecore, sustainable fanny pack fashion axe post-ironic air plant.'
     },
     {
       name: 'Ananya',
       slug: 'ananyan',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: '/avatar/pravatar_ananya_50_300.jpg',
       instruments: ['Singer', 'Sitar'],
       short_desc: 'Enamel pin flexitarian edison bulb actually, mustache heirloom tumeric.'
     },
     {
       name: 'Andrew',
       slug: 'aaron',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: '/avatar/pravatar_andrew_50_300.jpg',
       instruments: ['Piano', 'Guitar', 'Singer'],
       short_desc: 'Glossier XOXO mlkshk, enamel pin helvetica fingerstache kickstarter.'
     },
     {
       name: 'Andy',
       slug: 'andy',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      img: '/avatar/pravatar_andy_60_300.jpg',
       instruments: ['Fiddle', 'Violin'],
       short_desc: 'Blue bottle sartorial single-origin coffee, VHS franzen meggings green juice hexagon listicle XOXO meh neutra.'
     },
     {
-      name: 'Tony Corman',
-      slug: 'tony-corman',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
-      instruments: ['Piano', 'Bass', 'Drums'],
-      short_desc: 'Twee air plant tumeric drinking vinegar paleo chia chambray hexagon.'
-    },
-    {
-      name: 'Eclecta Quartet',
-      slug: 'eclecta-quartet',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
+      name: 'Random Quartet',
+      slug: 'ramdom-quartet',
+      img: '/avatar/pravatar_random_quarter_50_300.jpg',
       instruments: ['Viola', 'Cello', 'Violin'],
       short_desc: 'Succulents bushwick wolf authentic cloud bread lo-fi gluten-free intelligentsia.'
-    },
-    {
-      name: 'Friction Quartet',
-      slug: 'friction-quartet',
-      img: 'https://i.pravatar.cc/300?img=' + this.randomness(70),
-      instruments: ['Violin', 'Cello', 'Viola'],
-      short_desc: 'Mumblecore copper mug vape pinterest tote bag sartorial paleo helvetica artisan ramps.'
     }
   ]
 

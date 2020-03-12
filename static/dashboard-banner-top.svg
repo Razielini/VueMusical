@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="156px" viewBox="0 0 1024 156" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Dashboard banner top</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#C7C3C3" stop-opacity="0.502689085" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.502689085" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="1024" height="156"></rect>
+        <polygon id="path-4" points="146 0 292 254 0 254"></polygon>
+        <polygon id="path-6" points="76 0 222 254 -70 254"></polygon>
+        <polygon id="path-8" points="6 0 152 254 -140 254"></polygon>
+        <polygon id="path-10" points="260 0 317 99 203 99"></polygon>
+        <polygon id="path-12" points="305.5 0 351 79 260 79"></polygon>
+        <polygon id="path-14" points="352.5 -2 389 61 316 61"></polygon>
+        <polygon id="path-16" points="382 -1 411 49 353 49"></polygon>
+        <polygon id="path-18" points="245 26 302 125 188 125"></polygon>
+        <polygon id="path-20" points="290.5 26 336 105 245 105"></polygon>
+        <linearGradient x1="100%" y1="100%" x2="26.0703051%" y2="50%" id="linearGradient-22">
+            <stop stop-color="#8296C1" stop-opacity="0.1" offset="0%"></stop>
+            <stop stop-color="#4B5D8E" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-23" points="337.5 24 374 87 301 87"></polygon>
+        <polygon id="path-25" points="367 25 396 75 338 75"></polygon>
+    </defs>
+    <g id="Dashboard-new-account---Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -80.000000)">
+        <g id="Dashboard-banner-top" transform="translate(0.000000, 80.000000)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Banner-dashboard" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            <g id="Shapes-right" opacity="0.292062953" mask="url(#mask-3)">
+                <g transform="translate(935.000000, -98.000000)">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <use id="Triangle-Copy-14" stroke="none" fill-opacity="0.3" fill="#4B5D8E" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <mask id="mask-7" fill="white">
+                        <use xlink:href="#path-6"></use>
+                    </mask>
+                    <use id="Triangle-Copy-15" stroke="none" fill-opacity="0.3" fill="#4B5D8E" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    <mask id="mask-9" fill="white">
+                        <use xlink:href="#path-8"></use>
+                    </mask>
+                    <use id="Triangle-Copy-16" stroke="none" fill-opacity="0.3" fill="#4B5D8E" fill-rule="evenodd" xlink:href="#path-8"></use>
+                </g>
+            </g>
+            <g id="Shapes-left" opacity="0.651211504" mask="url(#mask-3)">
+                <g transform="translate(-89.000000, -1.000000)">
+                    <polygon id="Triangle-Copy-6" stroke="none" fill-opacity="0.6" fill="#4B5D8E" fill-rule="evenodd" transform="translate(89.000000, 78.500000) scale(1, -1) translate(-89.000000, -78.500000) " points="89 1 178 156 0 156"></polygon>
+                    <polygon id="Triangle" stroke="none" fill-opacity="0.5" fill="#4B5D8E" fill-rule="evenodd" points="118 0 207 155 29 155"></polygon>
+                    <polygon id="Triangle-Copy" stroke="none" fill-opacity="0.4" fill="#4B5D8E" fill-rule="evenodd" transform="translate(189.000000, 62.000000) scale(1, -1) translate(-189.000000, -62.000000) " points="189 0 260 124 118 124"></polygon>
+                    <mask id="mask-11" fill="white">
+                        <use xlink:href="#path-10"></use>
+                    </mask>
+                    <use id="Triangle-Copy-2" stroke="none" fill-opacity="0.3" fill="#4B5D8E" fill-rule="evenodd" xlink:href="#path-10"></use>
+                    <mask id="mask-13" fill="white">
+                        <use xlink:href="#path-12"></use>
+                    </mask>
+                    <use id="Triangle-Copy-3" stroke="none" fill-opacity="0.2" fill="#4B5D8E" fill-rule="evenodd" transform="translate(305.500000, 39.500000) scale(1, -1) translate(-305.500000, -39.500000) " xlink:href="#path-12"></use>
+                    <mask id="mask-15" fill="white">
+                        <use xlink:href="#path-14"></use>
+                    </mask>
+                    <use id="Triangle-Copy-4" stroke="none" fill-opacity="0.1" fill="#4B5D8E" fill-rule="evenodd" xlink:href="#path-14"></use>
+                    <mask id="mask-17" fill="white">
+                        <use xlink:href="#path-16"></use>
+                    </mask>
+                    <use id="Triangle-Copy-5" stroke="none" fill-opacity="0.05" fill="#4B5D8E" fill-rule="evenodd" transform="translate(382.000000, 24.000000) scale(1, -1) translate(-382.000000, -24.000000) " xlink:href="#path-16"></use>
+                    <polygon id="Triangle-Copy-13" stroke="none" fill-opacity="0.5" fill="#4B5D8E" fill-rule="evenodd" mask="url(#mask-17)" points="103 26 192 181 14 181"></polygon>
+                    <polygon id="Triangle-Copy-12" stroke="none" fill-opacity="0.6" fill="#4B5D8E" fill-rule="evenodd" mask="url(#mask-17)" transform="translate(14.000000, 103.500000) scale(1, -1) translate(-14.000000, -103.500000) " points="14 26 103 181 -75 181"></polygon>
+                    <polygon id="Triangle-Copy-11" stroke="none" fill-opacity="0.4" fill="#4B5D8E" fill-rule="evenodd" mask="url(#mask-17)" transform="translate(174.000000, 88.000000) scale(1, -1) translate(-174.000000, -88.000000) " points="174 26 245 150 103 150"></polygon>
+                    <mask id="mask-19" fill="white">
+                        <use xlink:href="#path-18"></use>
+                    </mask>
+                    <use id="Triangle-Copy-10" stroke="none" fill-opacity="0.3" fill="#4B5D8E" fill-rule="evenodd" xlink:href="#path-18"></use>
+                    <mask id="mask-21" fill="white">
+                        <use xlink:href="#path-20"></use>
+                    </mask>
+                    <use id="Triangle-Copy-9" stroke="none" fill-opacity="0.2" fill="#4B5D8E" fill-rule="evenodd" transform="translate(290.500000, 65.500000) scale(1, -1) translate(-290.500000, -65.500000) " xlink:href="#path-20"></use>
+                    <mask id="mask-24" fill="white">
+                        <use xlink:href="#path-23"></use>
+                    </mask>
+                    <use id="Triangle-Copy-8" stroke="none" fill="url(#linearGradient-22)" fill-rule="evenodd" xlink:href="#path-23"></use>
+                    <mask id="mask-26" fill="white">
+                        <use xlink:href="#path-25"></use>
+                    </mask>
+                    <use id="Triangle-Copy-7" stroke="none" fill-opacity="0.05" fill="#4B5D8E" fill-rule="evenodd" transform="translate(367.000000, 50.000000) scale(1, -1) translate(-367.000000, -50.000000) " xlink:href="#path-25"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
