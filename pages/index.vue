@@ -1,6 +1,6 @@
 <template>
   <v-col
-    class="px-0 mb-10 pt-0"
+    :class="$vuetify.breakpoint.xs ? 'px-4 mb-10 pt-0' : 'px-0 mb-10 pt-0'"
   >
     <v-subheader
       class="title pa-0 mx-0"
@@ -65,8 +65,8 @@
                   style="text-decoration: none;"
                 >
                   <v-card
-                    class="mr-6 mb-4 pa-0 cursor-pointer"
-                    max-width="200"
+                    :class="$vuetify.breakpoint.xs ? 'mr-0 mb-4 pa-0 cursor-pointer' : 'mr-6 mb-4 pa-0 cursor-pointer'"
+                    :max-width="$vuetify.breakpoint.xs ? 400 : 200"
                     flat
                   >
                     <v-img

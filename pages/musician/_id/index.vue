@@ -231,7 +231,7 @@
     </v-row>
 
     <v-row
-      class="mb-10"
+      :style="$vuetify.breakpoint.xs ? 'margin-bottom: 180px;' : 'margin-bottom: 40px;'"
     >
       <v-col
         class="px-0 mb-10"
